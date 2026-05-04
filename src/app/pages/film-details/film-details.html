@@ -1,0 +1,18 @@
+@if (film()) {
+      <div class="detail">
+        <img [src]="film()!.posterUrl" [alt]="film()!.title" class="poster" />
+
+        <div class="info">
+          <h1>{{ film()!.title }}</h1>
+          <p class="meta">{{ film()!.year }} · {{ film()!.genre }}</p>
+          <p class="rating">⭐ {{ film()!.rating }} / 10</p>
+          <p class="duration">⏱ {{ film()!.duration | durationPipe }}</p>
+          <p class="description">{{ film()!.description }}</p>
+
+          <button (click)="goBack()">← Back to films</button>
+        </div>
+      </div>
+    } @else {
+      <p class="empty">Film not found.</p>
+      <a routerLink="/">← Go home</a>
+    }
