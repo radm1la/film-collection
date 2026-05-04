@@ -1,11 +1,9 @@
 import { Component, inject } from '@angular/core';
 import { FilmService } from '../../services/film.service';
-import { RouterLink } from '@angular/router';
-import { Duration } from '../../pipes/duration';
-
+import { FilmCard } from '../../components/film-card/film-card';
 @Component({
   selector: 'app-home',
-  imports: [RouterLink, Duration],
+  imports: [FilmCard],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })

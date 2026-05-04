@@ -3,3 +3,29 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    background-color: #0f1115;
+    color: #f5f5f5;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.fa-solid,
+.fa-regular {
+    margin-right: 0.35rem;
+    vertical-align: middle;
+    color: #f5c518;
+}
+
+button .fa-heart {
+    color: #e50914;
+}
+
+button .fa-arrow-left{
+    color: #0f1115;
+}
+
+button i,
+p {
+    vertical-align: middle;
+}

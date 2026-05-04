@@ -5,11 +5,11 @@
         <div class="info">
           <h1>{{ film()!.title }}</h1>
           <p class="meta">{{ film()!.year }} · {{ film()!.genre }}</p>
-          <p class="rating">⭐ {{ film()!.rating }} / 10</p>
-          <p class="duration">⏱ {{ film()!.duration | durationPipe }}</p>
+          <p class="rating"><i class="fa-solid fa-star"></i> {{ film()!.rating }} / 10</p>
+          <p class="duration"><i class="fa-solid fa-clock"></i> {{ film()!.duration | durationPipe }}</p>
           <p class="description">{{ film()!.description }}</p>
 
-          <button (click)="goBack()">← Back to films</button>
+          <button (click)="goBack()"><i class="fa-solid fa-arrow-left"></i> Back to films</button>
         </div>
       </div>
     } @else {

@@ -2,89 +2,26 @@
   width: 100%;
   padding: 0.75rem 1rem;
   margin-bottom: 2rem;
-  background: #16213e;
-  border: 1px solid #e94560;
+  background: #16181d;
+  border: 1px solid #f5c518;
   border-radius: 8px;
-  color: #eee;
+  color: #f5f5f5;
   font-size: 1rem;
   outline: none;
 
-  &::placeholder { color: #555; }
-  &:focus { border-color: #fff; }
+  &::placeholder { color: #999; }
+  &:focus { border-color: #f5c518; }
 }
 
 .film-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 1.5rem;
-}
-
-.card {
-  background: #16213e;
-  border-radius: 12px;
-  overflow: hidden;
-  transition: transform 0.2s;
-  border: 2px solid transparent;
-
-  &:hover { transform: translateY(-4px); }
-  &.favorite { border-color: #e94560; }
-
-  a {
-    display: block;
-    text-decoration: none;
-    color: inherit;
-  }
-
-  img {
-    width: 100%;
-    aspect-ratio: 2/3;
-    object-fit: cover;
-  }
-
-  .card-info {
-    padding: 0.75rem;
-  }
-
-  h3 {
-    font-size: 0.95rem;
-    margin-bottom: 0.4rem;
-    color: #eee;
-  }
-
-  .meta {
-    font-size: 0.8rem;
-    color: #aaa;
-    margin-bottom: 0.25rem;
-  }
-
-  .rating {
-    font-size: 0.8rem;
-    color: #f0c040;
-    margin-bottom: 0.25rem;
-  }
-
-  .duration {
-    font-size: 0.8rem;
-    color: #aaa;
-  }
-
-  button {
-    width: 100%;
-    padding: 0.5rem;
-    background: #e94560;
-    color: white;
-    border: none;
-    cursor: pointer;
-    font-size: 0.8rem;
-    transition: background 0.2s;
-
-    &:hover { background: #c73652; }
-  }
 }
 
 .empty {
   text-align: center;
   font-size: 1.5rem;
   margin-top: 4rem;
-  color: #777;
+  color: #888;
 }

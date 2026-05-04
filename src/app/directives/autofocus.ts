@@ -7,7 +7,7 @@ export class Autofocus {
 
   constructor(private el:ElementRef) { }
 
-  ngafterViewInit() {
+  ngAfterViewInit() {
     this.el.nativeElement.focus();
   }
 }
