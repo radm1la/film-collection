@@ -9,7 +9,7 @@ export class FilmService {
   private films = signal<Film[]>(filmsData as Film[]);
   private searchQuery = signal<string>('');
 
-  filteredFilsm = computed(() => {
+  filteredFilms = computed(() => {
     const query = this.searchQuery().toLowerCase().trim();
 
     if (!query) {
