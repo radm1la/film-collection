@@ -35,7 +35,7 @@ Then open [http://localhost:4200](http://localhost:4200)
 
 ## Notes
 
-This project was completed under time constraints as an introduction to Angular.
-- Application logic (signals, service, routing, components) was written with AI assistance as a learning aid
-- Styling and HTML templates were also produced with AI assistance
-- The goal was to understand the structure and concepts of Angular, not to write every line from scratch
+This project was completed under time constraints as an introduction to Angular. Therfore, app logic, styleing and HTML templates were written with AI assistance 
+
+BTW app is responsive
+
