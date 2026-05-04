@@ -22,18 +22,18 @@ export class Breadcrumbs {
 
     const url = this.router.url;
 
-    const filmMatch = url.match(/\/films\/(\d+)/);
+    const filmMatch = url.match(/\/film\/(\d+)/);
     if (filmMatch) {
       const film = this.filmService.getFilmById(Number(filmMatch[1]));
       return [
-        { label: 'Home', path: '/' },
+        { label: 'Home', url: '/' },
         { label: film?.title ?? "Film",url:null}
       ];
     }
     
     if(url === '/about') {
         return [
-            { label: 'Home', path: '/' },
+            { label: 'Home', url: '/' },
             { label: 'About', url:null }
         ]
     }
